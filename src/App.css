@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-roboto: "Roboto Slab", serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-color: #212426;
+}
+.main__container {
+  padding: 4rem;
+
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  /* background-color: black; */
+}
+.app__name {
+  color: rgb(247, 229, 68);
+  font-size: 40px;
+  font-weight: bolder;
+}
+.app__search {
+  width: 70%;
+  margin: 4rem;
+  background: #1f2123;
+  padding: 1.2rem 2.5rem;
+  border-radius: 3rem;
+  /* -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527; */
+  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.app__search input {
+  color: #ffffff;
+  background: #1f2123;
+  font-size: 1.2rem;
+  outline: none;
+  font-weight: 500;
+  flex: 1;
+  /* padding-right: 1rem; */
+}
+.app__search img {
+  cursor: pointer;
+}
+.movies__data {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  /* max-width: 1500px; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.moviecard {
+  width: 100%;
+  width: 20%;
+  height: 460px;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1d1f;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.movie__img img {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem 1rem 0 0;
+}
+.year {
+  color: rgb(165, 161, 161);
+  margin: 7px;
+  font-size: 12px;
+}
+.movie__type {
+  color: rgb(247, 229, 68);
+  opacity: 70%;
+  font-size: 14px;
+  margin-left: 7px;
+}
+.movie__title {
+  color: #ffffff;
+  font-size: 16px;
+  margin-left: 7px;
+  /* font-weight: bold; */
+  margin-top: 5px;
+}
+.no__data {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1240px) {
+  .moviecard {
+    width: 26%;
+  }
+}
+@media screen and (max-width: 1090px) {
+  /* .moviecard {
+    width: 29%;
+  } */
+  .main__container {
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 860px) {
+  .moviecard {
+    width: 40%;
+  }
+  .main__container {
+    padding: 1.5rem;
+  }
+}
+@media screen and (max-width: 680px) {
+  .moviecard {
+    width: 50%;
+  }
+  .app__search {
+    margin: 2rem 4rem;
+  }
+}
+@media screen and (max-width: 580px) {
+  .main__container {
+    padding: 0.1rem;
+  }
+  .app__search {
+    margin: 2rem 0.5rem;
+    padding: 1rem 2rem;
+  }
+  .app__search input {
+    font-size: 0.8rem;
+  }
+}
